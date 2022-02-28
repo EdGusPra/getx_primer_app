@@ -14,10 +14,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      title: 'Sumar y resetear Getx',
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Material App Bar'),
+          title: const Center(child: Text('Sumar y resetear Getx')),
         ),
         body: Obx(() => Column(
               mainAxisAlignment: MainAxisAlignment.center,
