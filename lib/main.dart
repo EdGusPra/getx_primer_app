@@ -26,10 +26,10 @@ class MyApp extends StatelessWidget {
 
                 Center(child: Text('${c.counter}',style: 
                 const TextStyle(
-                  fontSize:50.0,
+                  fontSize:150.0,
                   ),
                   )),
-
+            const SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -39,6 +39,10 @@ class MyApp extends StatelessWidget {
                 onPressed: ()=>c.reset()),
               ],
             ),
+            const SizedBox(height: 50),
+             Text('${c.texto}', style:const TextStyle(
+               fontSize: 20.0,
+             )),
             
              ],
             )),
